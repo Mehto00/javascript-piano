@@ -1,0 +1,113 @@
+html {
+  font-size: 10px;
+  background: url(../img/piano2.jpg) center center;
+  background-size: cover;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+}
+
+.upperrow{
+  display: flex;
+  flex: 1;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.downrow{
+  display: flex;
+  flex: 1;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#space1 {   /* === this is the upperrow first space === */
+  width: 6%;
+}
+
+#space2 {   /* === this is the upperrow second space between D# and F# === */
+  width: 13%;
+}
+
+/* === Keyboard and its animation === */
+.keys {
+  display: flex;
+  flex: 1;
+  margin-left: 10%;
+  min-height: 95vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem 1.5rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  height: 14rem;
+  text-align: center;
+  color: white;
+  background: rgba(255,255,255,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.blacked {
+  background: rgba(0,0,0,0.7);
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #999999;
+  box-shadow: 0 0 1rem #999999;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #E5E5E5;
+}
+
+/* === Footer === */
+footer {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  height: 40px;
+}
+
+footer img {
+  margin-right: 15px;
+  height: 90%;
+}
+
+footer a {
+  color:#fff;
+  margin: 13px 10px 0px 0px;
+}
+
+footer a:visited{
+  color:#999999;
+}
